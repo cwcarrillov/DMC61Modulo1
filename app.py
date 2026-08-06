@@ -11,3 +11,10 @@ lista_numeros = list(range(int(valor_inicial), int(valor_final)))
 st.write(lista_numeros)
 
 modulos = st.sidebar.selectbox ("Selecione un módulo", ["Módulo Listas", "Módulo Arreglos", "Módulo Funciones"])
+
+if modulos == "Módulo Listas":
+  st.write("Bienvenido al módulo Listas")
+elif modulos == "Módulo Arreglos":
+  st.write("Bienvenido al módulo de Arreglos")
+else:
+  st.write("Bienvenido al módulo de Funciones")
