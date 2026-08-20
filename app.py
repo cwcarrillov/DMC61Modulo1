@@ -10,7 +10,7 @@ st.image("Python_logo.png", width = 300)
 st.sidebar.image("DMC.png",width = 100)
 
 
-modulos = st.sidebar.selectbox ("Selecione un módulo", ["Módulo Listas", "Módulo Arreglos", "Módulo Funciones"])
+modulos = st.sidebar.selectbox ("Selecione un módulo", ["Módulo Listas", "Módulo Arreglos", "Módulo Funciones", "Archivos"])
 
 if modulos == "Módulo Listas":
   
@@ -30,7 +30,8 @@ elif modulos == "Módulo Arreglos":
   cantidad_arreglo= np.arange(cantidad_elementos)
   st.write(cantidad_arreglo)
 
-
+elif modulos == "Archivos":
+  archivo = st.sidebar.file_uploader("Seleccione su archivo")
   
 else:
   
